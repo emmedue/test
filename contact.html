@@ -24,16 +24,17 @@
               <div class="col-md">
                 <div class="form-floating">
                   <label for="floatingInputGrid">Nome</label>
-                  <input type="text" name="name" class="form-control" id="floatingInputGrid" placeholder="Mario" required>
+                  <input type="text" name="nome" class="form-control" id="floatingInputGrid" placeholder="Mario" required>
                 </div>
               </div>
               <div class="col-md">
                 <div class="form-floating">
                   <label for="floatingInputGrid">Cognome</label>
-                  <input type="text" name="surname" class="form-control" id="floatingInputGrid" placeholder="Rossi" required>
+                  <input type="text" name="cognome" class="form-control" id="floatingInputGrid" placeholder="Rossi" required>
                 </div>
               </div>
               </div>
+              <br>
               <div class="row g-2">
               <div class="col-md">
                 <div class="form-floating">
@@ -44,13 +45,14 @@
               <div class="col-md">
                 <div class="form-floating">
                   <label for="floatingInputGrid">Telefono</label>
-                  <input type="phone" class="form-control" id="floatingInputGrid" placeholder="012 3456789"">
+                  <input type="phone" class="form-control" id="floatingInputGrid" placeholder="012 3456789">
                 </div>
               </div>
               </div>
+              <br>
               <div class="mb-3">
                  <label for="exampleFormControlInput1" class="form-label">Oggetto</label>
-                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Richiesta informazioni">
+                 <input type="text" name="oggetto" class="form-control" id="exampleFormControlInput1" placeholder="Richiesta informazioni" required>
                </div>
                <div class="mb-3">
                  <label for="exampleFormControlTextarea1" class="form-label">Messaggio</label>
@@ -58,13 +60,9 @@
                </div>
                 <button type="submit" name="button" class="btn btn-light">Invia</button>
                <input type="hidden" name="_subject" value="Messaggio dal sito">
-               <input type="hidden" name="_captcha" value="false">
-               <input type="hidden" name="_autoresponse" value="Abbiamo ricevuto la tua email. Ti risponderemo il prima possibile!">
+               <input type="hidden" name="_next" value="https://emmedue.github.io/test/grazie"> <!-- NOTE: todo: verificare url -->
           </form>
         </section>
 
-
-
-      </div>
 
     </main>
