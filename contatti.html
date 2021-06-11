@@ -61,7 +61,6 @@
             </div>
           </div>
         </section>
-
         <section>
           <div class="row justify-content-center">
               <div class="col-lg-4 col-md-12 col-sm-12 contatti-pag">
@@ -79,19 +78,19 @@
             </div>
         </section>
         <section class="contact-form-section grigio">
-          <h2><a name="Scrivici">Scrivici</a></h2>
+          <h2><a name="scrivici">Scrivici</a></h2>
           <form action="https://formsubmit.co/anitram.ocanom@gmail.com" method="POST">
              <div class="row g-2">
               <div class="col-md">
                 <div class="form-floating">
                   <label for="floatingInputGrid">Nome</label>
-                  <input type="text" name="name" class="form-control" id="floatingInputGrid" placeholder="Mario" required>
+                  <input type="text" name="nome" class="form-control" id="floatingInputGrid" placeholder="Mario" required>
                 </div>
               </div>
               <div class="col-md">
                 <div class="form-floating">
                   <label for="floatingInputGrid">Cognome</label>
-                  <input type="text" name="surname" class="form-control" id="floatingInputGrid" placeholder="Rossi" required>
+                  <input type="text" name="cognome" class="form-control" id="floatingInputGrid" placeholder="Rossi" required>
                 </div>
               </div>
               </div>
@@ -110,25 +109,22 @@
                 </div>
               </div>
               </div>
+              <br>
               <div class="mb-3">
                  <label for="exampleFormControlInput1" class="form-label">Oggetto</label>
-                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Richiesta informazioni">
+                 <input type="text" name="oggetto" class="form-control" id="exampleFormControlInput1" placeholder="Richiesta informazioni" required>
                </div>
                <div class="mb-3">
                  <label for="exampleFormControlTextarea1" class="form-label">Messaggio</label>
-                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                 <textarea name "message" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                </div>
                 <button type="submit" name="button" class="btn btn-light">Invia</button>
                <input type="hidden" name="_subject" value="Messaggio dal sito">
                <input type="hidden" name="_captcha" value="false">
-               <input type="hidden" name="_autoresponse" value="Abbiamo ricevuto la tua email. Ti risponderemo il prima possibile!">
+               <input type="hidden" name="_next" value="https://emmedue.github.io/test/grazie"> <!-- NOTE: todo: verificare url -->
           </form>
         </section>
-
-
-
       </div>
-
     </main>
 <!-- NOTE: inizio footer -->
     <footer>
