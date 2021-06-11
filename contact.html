@@ -56,10 +56,11 @@
                </div>
                <div class="mb-3">
                  <label for="exampleFormControlTextarea1" class="form-label">Messaggio</label>
-                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                </div>
                 <button type="submit" name="button" class="btn btn-light">Invia</button>
                <input type="hidden" name="_subject" value="Messaggio dal sito">
+               <input type="hidden" name="_captcha" value="false">
                <input type="hidden" name="_next" value="https://emmedue.github.io/test/grazie"> <!-- NOTE: todo: verificare url -->
           </form>
         </section>
